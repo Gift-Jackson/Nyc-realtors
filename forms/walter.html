@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walter George Form</title>
+    <!-- SIGNATURE API -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../transition.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/main logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="transition transition-3 is-active">
+        <div class="content">
+            <h1 class="load-text">Loading</h1>
+        </div>
+    </div>
+
+    <header>
+        <a href="/index.html">
+            <img class="logo" src="../assets/main logo.png" alt="">
+        </a>
+
+        <!-- Nav links -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Welcome</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/feedback.html">Feedback</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu toggle btn -->
+        <div class="toggle-box">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <h1>Realtor Walter's <br> <span class="highlight">Application</span>Form</h1>
+            <p>Complete the form to secure your prospective apartment today!</p>
+
+            <div class="form-container">
+                <form action="https://formsubmit.io/send/eab0ec84-4af3-4b0a-8e70-731cfff3cd0b" method="POST">
+
+                    <input name="_redirect" type="hidden" id="name"
+                        value="https://forreal.netlify.app/application-success.html">
+
+
+                    <label for="fullname">Fullname:</label>
+                    <input class="input" type="text" name="fullname" id="fullname" required>
+
+                    <label for="contact-email">Email Address:</label>
+                    <input class="input" type="email" id="contact-email" name="contact-email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input class="input" type="tel" id="phone" name="phone" value="+1 " required>
+
+                    <label for="phone_alt">Alternative Phone Number:</label>
+                    <input class="input" type="tel" id="phone_alt" name="phone_alt" value="+1 ">
+
+                    <label for="current-address">Current Address (City, State, Country):</label>
+                    <input class="input" type="text" id="current-address" name="current-address" required>
+
+                    <label for="license">Driver's License:</label>
+                    <input class="input" type="text" id="license" name="driver_license" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input class="input" type="date" id="dob" name="dob" required>
+
+                    <label for="ssn">SSN (Optional):</label>
+                    <input class="input" type="text" id="ssn" name="ssn">
+
+                    <label for="move-in-date">Desired Viewing Date:</label>
+                    <input class="input" type="date" id="viewing-date" name="viewing-date" required>
+
+                    <label for="move-in-date">Desired Move-in Date:</label>
+                    <input class="input" type="date" id="move-in-date" name="move-in-date" required>
+
+                    <label for="employment-status">Employment Status:</label>
+                    <select id="employment-status" name="employment-status" required>
+                        <option value="employed">Employed</option>
+                        <option value="self-employed">Self-Employed</option>
+                        <option value="unemployed">Unemployed</option>
+                        <option value="student">Student</option>
+                        <option value="retired">Retired</option>
+                    </select>
+
+                    <label>Other Occupants?</label><br>
+                    <label><input class="check" type="radio" name="other_occupant" id="other_occupan" value="Yes">
+                        Yes</label>&nbsp;&nbsp;&nbsp;
+                    <label><input class="check" type="radio" name="other_occupant" id="other_occupan" value="No">
+                        No</label><br><br>
+
+                    <label for="phone">Emergency Contact:</label>
+                    <input class="input" type="tel" id="emergency_contact" name="emergency_contact" value="+1 "
+                        required>
+
+                    <label for="fee">Application Fee:</label>
+                    <input class="input" type="text" id="fee" name="fee" value="$200" readonly>
+
+                    <label for="agent">Real Estate Agent:</label>
+                    <input class="input" type="text" id="agent" name="agent" value="Realtor Walter George" readonly>
+
+                    <label>Do you have a pet?</label><br>
+                    <label><input class="check" type="radio" name="pet" id="pet" value="Yes">
+                        Yes</label>&nbsp;&nbsp;&nbsp;
+                    <label><input class="check" type="radio" name="pet" id="pet" value="No"> No</label><br><br>
+
+                    <label>Do you smoke?</label><br>
+                    <label><input class="check" type="radio" name="smoke" id="smoke" value="Yes">
+                        Yes</label>&nbsp;&nbsp;&nbsp;
+                    <label><input class="check" type="radio" name="smoke" id="smoke" value="No"> No</label><br><br>
+
+                    <label>Are you an ex-convict?</label><br>
+                    <label><input class="check" type="radio" name="ex_convict" id="ex_convict" value="Yes">
+                        Yes</label>&nbsp;&nbsp;&nbsp;
+                    <label><input class="check" type="radio" name="ex_convict" id="ex_convict" value="No">
+                        No</label><br><br>
+
+                    <label>Any Voucher?</label><br>
+                    <label><input class="check" type="radio" name="voucher" id="voucher" value="Yes">
+                        Yes</label>&nbsp;&nbsp;&nbsp;
+                    <label><input class="check" type="radio" name="voucher" id="voucher" value="No"> No</label><br><br>
+
+                    <label for="current-residence">Why are you leaving your current residence?</label>
+                    <textarea id="current-residence" name="current-residence" rows="3" required></textarea>
+
+                    <label for="payment-method">Choose Payment Option:</label>
+                    <select name="payment-method" id="payment-method">
+                        <option value="paypal">PayPal</option>
+                        <option value="Chime">Chime</option>
+                        <option value="CashApp">CashApp</option>
+                        <option value="Zelle" selected>Zelle</option>
+                    </select>
+
+                    <label for="other_payment">Add Other Payment Option:</label>
+                    <input class="input" type="text" id="other_payment" name="other_payment">
+
+                    <label for="additional-info">Additional Information:</label>
+                    <textarea id="additional-info" name="additional-info" rows="3"></textarea>
+
+                    <label for="signature">Signature</label>
+                    <canvas id="signature-pad" class="signatureCanvas" height=200 style="touch-action: none;"></canvas>
+
+                    <button type="submit">Submit</button>
+                    <button onclick="showModal()" class="switch-btn">Switch Form</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <a href="/index.html">
+                <img src="../assets/footer logo.png" alt="logo" data-aos="fade-up" data-aos-delay="300">
+            </a>
+
+            <div class="quick-links" data-aos="fade-up" data-aos-delay="300">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/index.html">Welcome</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/fee.html">Fee Policy</a></li>
+                    <li><a href="/contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                <h3>Newsletter Sign Up</h3>
+                <small>Subscribe to our newsletter and stay up to date with the latest from us.</small>
+                <form action="" method="post">
+                    <input type="email" name="Email" placeholder="Your Email Address..." required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2023 NYC Realtors. All rights reserved.</p>
+    </footer>
+
+    <!-- select realtor modal -->
+    <div id="selectRealtorModal" class="modal-bg">
+        <div class="modal-content">
+            <div class="title">
+                <h2>Select <span class="highlight">Realtor!</span></h2>
+            </div>
+            <div class="realtors">
+                <ul>
+                    <li><a href="/forms/mayjay.html">Mayjay Properties</a></li>
+                    <li><a href="/forms/jeffrey.html">Realtor Jeffrey A. Fox</a></li>
+                    <li><a href="/forms/villastar.html">Villa Star Realty</a></li>
+                    <li><a href="/forms/walter.html">Realtor Walter George</a></li>
+                </ul>
+            </div>
+            <div onclick="hideModal()" class="close-modal-btn"><span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+    <script src="../nav.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var canvas = document.getElementById('signature-pad');
+        var signaturePad = new SignaturePad(canvas);
+    </script>
+</body>
+
+</html>

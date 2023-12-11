@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Realtors | Fee Policy</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="transition.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- MATERIAL ICON -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/main logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="transition transition-2 is-active">
+        <div class="content">
+            <h1 class="load-text">Loading</h1>
+        </div>
+    </div>
+
+    <header>
+        <a href="/index.html">
+            <img class="logo" src="../assets/main logo.png" alt="">
+        </a>
+
+        <!-- Nav links -->
+        <nav>
+            <ul>
+                <li><a href="/index.html">Welcome</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a class="current" href="/fee.html">Fee Policy</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- menu toggle btn -->
+        <div class="toggle-box">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="application">
+            <h1>Application Fee <span class="highlight">Notice</span></h1>
+
+            <p>The <span class="highlight">Two hundred Dollars ($200)</span> application fee is for the processing
+                of the application, for neccessary background checks, criminal/eviction records and charges for
+                Apartment tour.
+                The fee helps you secure the apartment for possible owners consideration for acceptance of your rent.
+                <br><br>
+                The <span class="highlight">$200</span> is fully refundable upon viewing if applicant is denied rental
+                or no
+                longer
+                interested in the said apartment or any other available listings at the time of viewing.
+                The fee is to be given to the agent in contact to ensure proper documentation and the quick processing
+                and
+                approval of your application.
+            </p>
+
+
+            <button onclick="showModal()" class="btn"><span class="btn-text">Apply Now</span> <span
+                    class="material-symbols-outlined">arrow_forward</span></button>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <a href="/index.html">
+                <img src="assets/footer logo.png" alt="logo" data-aos="fade-up" data-aos-delay="300">
+            </a>
+
+            <div class="quick-links" data-aos="fade-up" data-aos-delay="300">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/index.html">Welcome</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                    <li><a href="/fee.html">Fee Policy</a></li>
+                    <li><a href="/contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                <h3>Newsletter Sign Up</h3>
+                <small>Subscribe to our newsletter and stay up to date with the latest from us.</small>
+                <form action="" method="post">
+                    <input type="email" name="Email" placeholder="Your Email Address..." required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; 2023 NYC Realtors. All rights reserved.</p>
+    </footer>
+
+    <!-- select realtor modal -->
+    <div id="selectRealtorModal" class="modal-bg">
+        <div class="modal-content">
+            <div class="title">
+                <h2>Select <span class="highlight">Realtor!</span></h2>
+            </div>
+            <div class="realtors">
+                <ul>
+                    <li><a href="/forms/mayjay.html">Mayjay Properties</a></li>
+                    <li><a href="/forms/jeffrey.html">Realtor Jeffrey A. Fox</a></li>
+                    <li><a href="/forms/villastar.html">Villa Star Realty</a></li>
+                    <li><a href="/forms/walter.html">Realtor Walter George</a></li>
+                </ul>
+            </div>
+            <div onclick="hideModal()" class="close-modal-btn"><span class="material-symbols-outlined">close</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../script.js"></script>
+    <script src="nav.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
