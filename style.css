@@ -41,7 +41,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, .99);
     z-index: 3;
 }
 
@@ -460,6 +460,11 @@ footer p {
     margin-top: .5rem;
 }
 
+.form-container form select{
+    width:100%;
+    background-color: transparent;
+}
+
 .form-container form textarea {
     border-radius: 1rem;
 }
@@ -606,7 +611,7 @@ label {
         left: 0;
         min-height: calc(100vh - 60px);
         width: 100%;
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .99);
     }
 
     nav.active {
