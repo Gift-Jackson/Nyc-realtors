@@ -41,7 +41,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, .99);
+    background-color: rgba(255, 255, 255, .95);
     z-index: 3;
 }
 
@@ -458,10 +458,7 @@ footer p {
     border: 1px solid #eee;
     border-radius: 50px;
     margin-top: .5rem;
-}
-
-.form-container form select{
-    width:100%;
+    width: 100%;
     background-color: transparent;
 }
 
@@ -501,11 +498,14 @@ label {
     accent-color: var(--primary-color);
 }
 
-.form-container form .switch-btn {
+.switch-btn {
     border: 1px solid var(--primary-color);
     background-color: transparent;
     color: var(--primary-color);
     margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 50px;
 }
 
 /* Realtors Modal */
@@ -594,6 +594,7 @@ label {
     header {
         height: 60px;
         padding: 0 1rem;
+        background-color: var(--secondary-color);
     }
 
     .logo {
@@ -611,7 +612,7 @@ label {
         left: 0;
         min-height: calc(100vh - 60px);
         width: 100%;
-        background-color: rgba(255, 255, 255, .99);
+        background-color: var(--secondary-color);
     }
 
     nav.active {
