@@ -13,7 +13,7 @@
 
 
 :root {
-    --primary-color: #ff7f50;
+    --primary-color: #fa5b21;
     --secondary-color: #fefefe;
     --tertiary-color: #f5f5f5;
     --text-color: #4a4a4a;
@@ -26,7 +26,7 @@ body {
 main {
     width: 90%;
     margin: 1rem auto;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 header {
@@ -138,6 +138,8 @@ nav ul a:hover,
     width: 90%;
     margin: auto;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -146,6 +148,7 @@ nav ul a:hover,
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .left-content,
@@ -249,7 +252,7 @@ nav ul a:hover,
     border: 0;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: .8rem 1rem;
+    padding: 1rem 2rem;
     margin-top: 1rem;
     border-radius: 50px;
     transition: .2s;
@@ -277,8 +280,11 @@ table a {
     color: var(--primary-color);
 }
 
-marquee pre h2 {
+marquee pre h2 span {
+    border: 1px dashed var(--secondary-color);
+    padding: 1rem 2rem;
     color: var(--secondary-color);
+    border-radius: 50px;
 }
 
 footer {
@@ -437,11 +443,15 @@ footer p {
 
 .mission ul li {
     padding: 2rem 1rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     background-color: var(--secondary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Forms */
+.form h1 {
+    font-size: 25px;
+}
+
 .form-container {
     text-align: left;
 }
@@ -587,8 +597,22 @@ label {
     color: var(--primary-color);
 }
 
-#explore-realtors{
+#explore-realtors {
     padding-top: 100px;
+}
+
+.form-title {
+    background-color: #eee;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+}
+
+.extra {
+    margin-bottom: 2rem;
+}
+
+.left-content p {
+    margin-bottom: .5rem;
 }
 
 
@@ -638,7 +662,7 @@ label {
 
     nav ul a {
         opacity: 1;
-        font-size: 19px;
+        font-size: 25px;
     }
 
     .hero-content {
@@ -651,7 +675,7 @@ label {
     }
 
     .left-content {
-        text-align: center;
+        /* text-align: center; */
         margin-top: 2rem;
     }
 
